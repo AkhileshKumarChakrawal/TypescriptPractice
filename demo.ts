@@ -157,35 +157,6 @@ arrsetnum.push(56);
 arrsetnum.push("efewfe");
 console.log(arrsetnum);*/
 
-//generic examples
-function makefun<T ,U>(id : T , name : U) {
-    console.log("id::"+id+" name is:;"+name);
-}
-makefun<string , number>("amar", 10001);
-
-class Student<T , U>{
-    private id : T;
-    private name : U;
-    constructor(id: T , nam: U){
-        this.id = id;
-        this.name = nam;
-    }
-    display():void{
-        console.log(`id::${this.id} name:: ${this.name}`);
-    }
-}
-let lis = new Student<number , string>(102,"raja");
-lis.display();
-
-interface empdetail<T , U> {
-    id: T;
-    name: U;
-}
-    function deta(eid : number, ename : string){
-        console.log(`id==${eid} and name==${ename}`);
-}
-let d: Date = new Date();
-console.log(d);
 
 /*
 interface  os {
@@ -316,3 +287,34 @@ function test(data) {
     }
 }
 test(arr69);
+
+
+//generic examples
+function makefun<T ,U>(id : T , name : U) {
+    console.log("id::"+id+" name is:;"+name);
+}
+makefun<string , number>("amar", 10001);
+
+class Student<T , U>{
+    private id : T;
+    private name : U;
+    constructor(id: T , nam: U){
+        this.id = id;
+        this.name = nam;
+    }
+    display():void{
+        console.log(`id::${this.id} name:: ${this.name}`);
+    }
+}
+let lis = new Student<number , string>(102,"raja");
+lis.display();
+
+interface empdetail<T , U> {
+    id: T;
+    name: U;
+}
+function deta(eid : number, ename : string){
+    console.log(`id==${eid} and name==${ename}`);
+}
+let d: Date = new Date();
+console.log(d);

@@ -117,6 +117,7 @@ function re(a, b) {
     return "data";
 }
 console.log(re(45, 65));
+//generic example
 function getitems(items) {
     return new Array().concat(items);
 }
@@ -125,41 +126,11 @@ var arrstring = getitems(["aa", "bb", "cc"]);
 arrnumber.push(89);
 arrnumber.push(66);
 console.log(arrnumber);
-/*
-
-function setitem(items : any[]): any[]{
-    return new Array().concat(items);
-}
-let arrsetnum = setitem([10,2,89]);
-let arrsetstring = setitem(["aaa","bbb","vvv"]);
-arrsetnum.push(56);
-arrsetnum.push("efewfe");
-console.log(arrsetnum);*/
-function makefun(id, name) {
-    console.log("id::" + id + " name is:;" + name);
-}
-makefun("amar", 10001);
-var Student = /** @class */ (function () {
-    function Student(id, nam) {
-        this.id = id;
-        this.name = nam;
-    }
-    Student.prototype.display = function () {
-        console.log("id::" + this.id + " name:: " + this.name);
-    };
-    return Student;
-}());
-var lis = new Student(102, "raja");
-lis.display();
-function deta(eid, ename) {
-    console.log("id==" + eid + " and name==" + ename);
-}
-var d = new Date();
-console.log(d);
 var empp = function (employe) {
     console.log(employe.name + " " + employe.desg + " " + employe.address + " " + employe.eid);
 };
 var or = { name: 'amar', desg: 'fullstack developer', address: 'ar nagar', eid: 101 };
+//class example
 var people = /** @class */ (function () {
     function people(lang, quant) {
         this.language = lang;
@@ -186,3 +157,25 @@ function test(data) {
     }
 }
 test(arr69);
+//generic examples
+function makefun(id, name) {
+    console.log("id::" + id + " name is:;" + name);
+}
+makefun("amar", 10001);
+var Student = /** @class */ (function () {
+    function Student(id, nam) {
+        this.id = id;
+        this.name = nam;
+    }
+    Student.prototype.display = function () {
+        console.log("id::" + this.id + " name:: " + this.name);
+    };
+    return Student;
+}());
+var lis = new Student(102, "raja");
+lis.display();
+function deta(eid, ename) {
+    console.log("id==" + eid + " and name==" + ename);
+}
+var d = new Date();
+console.log(d);
